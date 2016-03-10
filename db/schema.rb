@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160310074636) do
+=======
+ActiveRecord::Schema.define(version: 20160303073017) do
+>>>>>>> f0273ac791714ce5ddefec2fb11d3e8a75337b16
 
   create_table "books", force: :cascade do |t|
     t.string   "title"
@@ -20,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160310074636) do
     t.datetime "updated_at",      null: false
   end
 
+<<<<<<< HEAD
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -41,4 +46,6 @@ ActiveRecord::Schema.define(version: 20160310074636) do
   add_index "users", ["name"], name: "index_users_on_name", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
+=======
+>>>>>>> f0273ac791714ce5ddefec2fb11d3e8a75337b16
 end
